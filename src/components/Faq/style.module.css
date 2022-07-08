@@ -1,0 +1,16 @@
+.title{
+    text-align: center;
+    font-size: 4rem;
+    color: #2798B7;
+}
+
+
+.accordion{
+    border: .5rem solid #2798B7;
+    border-radius: 1rem;
+}
+
+
+.header{
+    font-size: 5rem;
+}

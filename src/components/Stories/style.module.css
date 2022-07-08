@@ -1,0 +1,50 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button{
+   background-color: #F94001;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 2rem;
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+
+.btnmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stories{
+    border: 3px solid #F94001;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 4rem;
+    border-radius: 50%;
+    background-color: #F94001;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    /* color: #F94001; */
+    color: #2798B7;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .main{display: none;}
+}

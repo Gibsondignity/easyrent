@@ -1,0 +1,61 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #000;
+    color: #fff;
+    padding: 2.5rem 0 2.5rem 2.5rem;
+}
+
+.logoArea{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.links{
+    cursor: pointer;
+    list-style: none;
+    text-align: left;
+}
+
+
+.links_title{
+    list-style: none;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.about{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+
+.socials{
+    text-align: center;
+}
+
+
+.socialMedia{
+    display: grid;
+}
+
+
+@media screen and (max-width: 768px){
+    .footer{
+        grid-template-columns: repeat(1, 1fr);
+        /* display: flex;
+        flex-direction: column-reverse; */
+    }
+
+    .socialMedia{
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+    .logoArea{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
