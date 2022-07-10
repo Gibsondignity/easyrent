@@ -1,18 +1,18 @@
 export default [
   {
     path: '/',
-    label: 'Home',
+    label: 'HOME',
   },
   {
     path: 'login',
-    label: 'Apply',
+    label: 'APPLY',
   },
   {
     path: 'calculator',
-    label: 'Calculator',
+    label: 'CALCULATOR',
   },
   {
     path: 'about',
-    label: 'About',
+    label: 'ABOUT',
   },
 ];

@@ -6,12 +6,13 @@ const Calculator = () => {
 
     const [netSalary, setSalary] = useState(0);    
     const [rentAmount, setAmount] = useState(0);    
-    const [year, setYear] = useState(0);    
+    const [year, setYear] = useState('1');    
 
-    const [message, setMessage] = useState('');   
+    const [message, setMessage] = useState('Message appears here');   
     const [monthlyPayment, setMonthlyPayment] = useState(0);
-    const [yearPayment, setYearPayment] = useState(1)
-    // const [monthlyPayment, setMonthlyPayment] = useState(0);
+    const [yearPayment, setYearPayment] = useState(0);
+
+    const [userNetSalary, setUserNetSalary] = useState(0);
 
     
 
@@ -20,34 +21,82 @@ const Calculator = () => {
         const year_rate = 0.23;
         const two_year_rate = 0.25;
         e.preventDefault();
-
-        if (netSalary === 0 || rentAmount === 0) {
-            setMessage('Please enter monthly salary and rent amount');
+        let message = '';
+        if (netSalary === 0 || rentAmount === 0 || netSalary === '' || rentAmount === '') {
+            message = <p style={{ 'color': 'red' }}>Please enter monthly salary and rent amount</p>;
+            setMessage(message);
+            setMonthlyPayment(0);
+            setYearPayment(0);
+            setUserNetSalary(0);
         }
         else {
-            if(year === 1){
+            if(year === '1'){
                 let monthly_payment = parseFloat(((rentAmount * year_rate) + parseFloat(rentAmount)));
-                let year_payment = parseFloat(((rentAmount * year_rate) + parseFloat(rentAmount)) * 12);
                 setMonthlyPayment(monthly_payment.toFixed(2) );
+
+
+                let year_payment = parseFloat(((rentAmount * year_rate) + parseFloat(rentAmount)) * 12);
                 setYearPayment(year_payment.toFixed(2));
-                console.log(monthly_payment, rentAmount, year_rate);
+
+
+                // Percentage of user net salary for 1 year
+                let user_net_salary = parseFloat((netSalary * 12));
+                setUserNetSalary(user_net_salary.toFixed(2));
+               
+                
             }
 
-            else if(year === 2){
+            
+            if(year === '2'){
+
                 let monthly_payment = parseFloat(((rentAmount * two_year_rate) + parseFloat(rentAmount)));
-                let year_payment = parseFloat(((rentAmount * two_year_rate) + parseFloat(rentAmount)) * 12);
                 setMonthlyPayment(monthly_payment.toFixed(2) );
+
+
+                let year_payment = parseFloat(((rentAmount * two_year_rate) + parseFloat(rentAmount)) * 24);
                 setYearPayment(year_payment.toFixed(2));
-                console.log(monthly_payment, rentAmount, two_year_rate);
+                
+              
+                // Percentage of user net salary for 2 year
+                let user_net_salary = parseFloat((netSalary * 24));
+                setUserNetSalary(user_net_salary.toFixed(2));
+                
             }
+
+            handleMessage();
+
         }
         
+    }
+
+
+    let handleMessage = () => {
+
+        let message = '';
+        console.log(( salary > yearPayment));
+
+        let salary = userNetSalary / 2;
+        console.log(salary);
+        console.log(yearPayment) 
+
+        if(salary <= yearPayment){
+            message = <p style={{ 'color': 'red' }}>You are not eligible</p>;
+            setMessage(message);
+        }
+        else if(salary > yearPayment){
+            message = <p style={{ 'color': 'green' }}>You are eligible</p>;
+            setMessage(message);
+        }
+        else{
+            setMessage('');
+        }
     }
 
 
     let reload = () => {
         window.location.reload();
       }
+
 
   return (
     <div>
@@ -67,7 +116,7 @@ const Calculator = () => {
                                 </InputGroup>
                                 
                                 
-                                <Form.Label htmlFor="basic-url">Monthly Rent Amount Charged</Form.Label>
+                                <Form.Label htmlFor="basic-url">Monthly Rent Amount Charged By LandLord</Form.Label>
                                 <Form.Label htmlFor="basic-url"></Form.Label>
                                 <InputGroup className="mb-3">
                                     <InputGroup.Text>GH¢</InputGroup.Text>
@@ -84,7 +133,7 @@ const Calculator = () => {
                                     >
                                         <option eventKey={1} value={1}>1 Year</option>
                                         <option eventKey={2} value={2}>2 Years</option>
-                                        <option eventKey={3} value={3}>3 Years</option>
+                                        
                                     </Form.Select>
                                 </Form.Group>
                                 
@@ -97,13 +146,13 @@ const Calculator = () => {
 
                     <div className={style.results}>
 
-                        <p>{ message }</p>
+                        <p> { message } </p>
                         <hr/>
                         <p>Rent Period: { year } Year/Years</p>
                         <hr/>
-                        <p>Expected Monthly Rent Payment: GH¢{ monthlyPayment }</p>
+                        <p> Monthly Rent Payment: GH¢ { monthlyPayment }</p>
                         <hr/>
-                        <p>Overall Amount: GH¢{ yearPayment }</p>
+                        <p>Overall Amount: GH¢ { yearPayment }</p>
                         {/* <hr/>
                         <p>Amount Due Before Moving: {}</p> */}
                     </div>

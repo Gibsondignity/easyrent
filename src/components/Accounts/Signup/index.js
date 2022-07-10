@@ -20,6 +20,14 @@ const Signuppage = () => {
                 </Form.Text>
               </Form.Group>
 
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Phone number</Form.Label>
+                <Form.Control type="text" placeholder="Phone number" />
+                <Form.Text>
+                  We&apos;ll never share your number with anyone else.
+                </Form.Text>
+              </Form.Group>
+
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
@@ -33,7 +41,7 @@ const Signuppage = () => {
               <Form.Group className="mb-3" controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Keep me signed in" />
               </Form.Group>
-              <span><i>Already have an account? </i></span><Link href="/account/login">Login</Link><br/>
+              <span><i>Already have an account? </i></span><Link href="login">Login</Link><br/>
               {/* <Link href="/">Forgot Password?</Link><br/> */}
               
               <br />

@@ -8,28 +8,43 @@ const CollapseAccordion = () => {
   const data = [
     {
       key: 0,
-      header: 'Accordion Item #1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      header: '1.	Who qualifies for EASYRENT?',
+      body: 'Anyone working individual with an assured and verifiable income.'
     },
     {
       key: 1,
-      header: 'Accordion Item #1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      header: '2.	How do I apply?',
+      body: 'To apply online, first register on our site by signing up. Log into your account then go to the apply button. Fill in the form then submit. Or you can visit our office to pick a form.'
     },
     {
       key: 2,
-      header: 'Accordion Item #1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      header: '3.	Do I pay for the Forms?',
+      body: 'Yes. When you visit our office for the final application process.'
     },
     {
       key: 3,
-      header: 'Accordion Item #1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      header: '4.	Do I need a guarantor? ',
+      body: 'Yes, you need a guarantor and he/she should be someone with a verifiable income as well and willing to cooperate.'
     },
     {
       key: 4,
-      header: 'Accordion Item #1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      header: '5.	What documentation do I need to provide when applying? ',
+      body: 'You will need a national ID (preferably GhCard), evidence of employment, a payment slip, or account statement.'
+    },
+    {
+      key: 5,
+      header: '6.	How is the repayment plan?  ',
+      body: 'You make an initial deposit to EASYRENT that varies with each rent amount. From there EASYRENT pays your rent advance, and you do your repayment in monthly installments.'
+    },
+    {
+      key: 6,
+      header: '7.	How long does the application process take?',
+      body: 'As soon as possible depending on the reliability of the information and documentation provided and the cooperation of the individual.'
+    },
+    {
+      key: 7,
+      header: '8.	What is the calculator for?  ',
+      body: 'The calculator helps you to know your monthly installments based on your net income.'
     },
   ];
 

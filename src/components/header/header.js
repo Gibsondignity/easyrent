@@ -3,12 +3,14 @@
 
 import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
+import Link from 'next/link';
 import Logo from 'components/logo';
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 import Dropdown from 'react-bootstrap/Dropdown';
+import style from './style.module.css';
 
 
 // import EasyrentLogo from 'assets/images/Easy-Rent-logo.png';
@@ -27,29 +29,20 @@ export default function Header({ className }) {
               <Link
                 activeClass="active"
                 href={path}
-                // to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
                 key={i}
-              >
-                {
-                  console.log(path)
-                
-                }
+              >  
                 {label}
               </Link>
             ))}
           </Flex>
           
-          <Dropdown>
+          <Dropdown className={style.dropdown}>
             <Dropdown.Toggle style={{'backgroundColor':"#2798B7" }} id="dropdown-basic">
               Account
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href="login">Log In</Dropdown.Item>
-              <Dropdown.Item href="signup">Sign Up</Dropdown.Item>
+              <Dropdown.Item ><Link href="login">Log In</Link></Dropdown.Item>
+              <Dropdown.Item ><Link href="signup">Sign Up</Link></Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <MobileDrawer />
@@ -123,7 +116,7 @@ const styles = {
     ml: 'auto',
     mr: 6,
     display: 'none',
-    '@media screen and (min-width: 1024px)': {
+    '@media screen and (min-width: 967px)': {
       display: 'block',
     },
 
@@ -135,7 +128,7 @@ const styles = {
     a: {
       fontSize: '20px',
       fontWeight: 'heading',
-      px: 20,
+      px: 12,
       cursor: 'pointer',
       lineHeight: '1.2',
       transition: 'all 0.15s',

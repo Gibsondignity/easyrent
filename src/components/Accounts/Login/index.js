@@ -14,8 +14,8 @@ const Loginpage = () => {
             <Form>
 
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Label>Email or Phone</Form.Label>
+                <Form.Control type="email" placeholder="Enter email or phone" />
                 <Form.Text>
                   We&apos;ll never share your email with anyone else.
                 </Form.Text>
@@ -31,7 +31,7 @@ const Loginpage = () => {
                 <Form.Check type="checkbox" label="Keep me signed in" />
               </Form.Group>
 
-              <span><i>Don&apos;t have an account yet? </i></span><Link href="/account/signup">Register</Link><br/>
+              <span><i>Don&apos;t have an account yet? </i></span><Link href="signup">Register</Link><br/>
               <Link href="/">Forgot Password?</Link><br/>
               
               <br />

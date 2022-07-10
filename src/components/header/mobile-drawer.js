@@ -4,11 +4,12 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
+import Link from 'next/link';
 import {
   FaFacebookF,
   FaTwitter,
-  FaGithubAlt,
+  FaInstagram,
   FaDribbble,
 } from 'react-icons/fa';
 import menuItems from './header.data';
@@ -22,14 +23,13 @@ const social = [
     path: 'https://twitter.com/',
     icon: <FaTwitter />,
   },
+  
   {
-    path: 'https://github.com/',
-    icon: <FaGithubAlt />,
+    path: 'https://twitter.com/',
+    icon: <FaInstagram />,
   },
-  {
-    path: 'https://dribbble.com/',
-    icon: <FaDribbble />,
-  },
+  
+
 ];
 
 const MobileDrawer = () => {
@@ -62,7 +62,7 @@ const MobileDrawer = () => {
             {menuItems.map(({ path, label }, i) => (
               <Link
                 activeClass="active"
-                to={path}
+                href={path}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -71,7 +71,10 @@ const MobileDrawer = () => {
               >
                 {label}
               </Link>
+              
             ))}
+            <Link href="login">LOGIN</Link>
+            <Link href="signup">SIGN UP</Link>
           </Box>
 
           <Box sx={styles.menuFooter}>
@@ -99,7 +102,7 @@ const styles = {
     flexShrink: '0',
     width: '26px',
     cursor: 'pointer',
-    '@media screen and (min-width: 1024px)': {
+    '@media screen and (min-width: 967px)': {
       display: 'none',
     },
   },
