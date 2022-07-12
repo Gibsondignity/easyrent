@@ -1,9 +1,5 @@
 import React from 'react';
 
-// images
-// import EasyrentLogo from 'assets/images/Easy-Rent-logo.png';
-// import EasyrentLogo from 'https://i.imgur.com/QBSz4Lw.png';
-// import Cozytech from 'https://i.imgur.com/ZizmIEm.jpg';
 
 import style from './style.module.css';
 import Link from 'next/link';
@@ -30,13 +26,22 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* <div className={style.socialMedia}> */}
-                <div className={style.about}>
-                    <p>Visit our office at Harriman Plaza, 1st floor, office N#2</p>
-                    <p>Powered by Cozytech Solutions<img src="https://i.imgur.com/ZizmIEm.jpg" width={80} height={80} /></p>
-                </div>
+            <div className={style.about}>
+                <p>Visit our office at Harriman Plaza, 1st floor, office N#2</p>
+                <p>Powered by Cozytech Solutions<img src="https://i.imgur.com/REuSSUJ.jpg" width={130} height={50} /></p>
+            </div>
 
-                <div className={style.socials}>
+            <div className={style.socials}>
+                <di>
+                    <ul className={style.contacts_list}>
+                        <li className={style.contacts}>Contacts</li>
+                        <li className={style.contact_items}>info@easyrent.com</li>
+                        <li className={style.contact_items}>+233(0) 242 869 759</li>
+                        
+                        
+                    </ul>
+                </di>
+                <div>
                     <Link href="https://www.facebook.com/EasyRent-10990986801098/">
                         <BsFacebook size={40} color="#1773EA" style={{margin: '.3rem',  cursor: 'pointer' }}/>
                     </Link>
@@ -48,8 +53,9 @@ const Footer = () => {
                     <Link href="https://www.instagram.com/easyrent/">
                         <BsInstagram size={40} color="#9C30BF" style={{margin: '.3rem', cursor: 'pointer' }}/>
                     </Link>
-                </div>
-            {/* </div> */}
+                </div> 
+            </div>
+
         </div>
 
     </div>

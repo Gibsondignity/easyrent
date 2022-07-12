@@ -14,8 +14,8 @@ const Loginpage = () => {
             <Form>
 
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email or Phone</Form.Label>
-                <Form.Control type="email" placeholder="Enter email or phone" />
+                <Form.Label>Email</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" required/>
                 <Form.Text>
                   We&apos;ll never share your email with anyone else.
                 </Form.Text>
@@ -23,7 +23,7 @@ const Loginpage = () => {
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control type="password" placeholder="Password" required/>
               </Form.Group>
 
 

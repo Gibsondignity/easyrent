@@ -4,7 +4,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-
+import Carousel from 'react-bootstrap/Carousel' ; 
 import style from './style.module.css';
 
 const Stories = () => {
@@ -47,9 +47,7 @@ const Stories = () => {
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
-                    </Button>
+                    
                     </Modal.Footer>
                 </Modal>
                 
