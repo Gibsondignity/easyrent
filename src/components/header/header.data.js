@@ -15,4 +15,8 @@ export default [
     path: 'about',
     label: 'ABOUT',
   },
+  {
+    path: 'service',
+    label: 'SERVICES',
+  },
 ];

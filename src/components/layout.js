@@ -8,7 +8,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Sticky from 'react-stickynode';
 import Header from './header/header';
 // import Footer from './footer/footer';
-import Footer from '../components/Newfooter'
+import Footer from './footer'
 
 import {SSRProvider} from '@react-aria/ssr';
 
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
     } else if (status.status === Sticky.STATUS_ORIGINAL) {
       setIsSticky(false);
     }
-  };
+  }
 
   
   return (
@@ -43,5 +43,5 @@ export default function Layout({ children }) {
       </SSRProvider>
     </React.Fragment>
     
-  );
+  )
 }

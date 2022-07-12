@@ -1,0 +1,38 @@
+.heading{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2798B7;
+    font-family: 'montserrat', sans-serif;
+}
+
+
+.p{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.1rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: .8rem;
+    text-align: justify;
+}
+
+
+.list > li{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.1rem;
+    padding: 1rem;
+    font-weight: .8rem;
+    text-align: justify;
+}
+
+
+.list {
+    list-style: circle outside;
+}
+
+
+.main{
+    margin-bottom: 2.5rem;
+    
+}

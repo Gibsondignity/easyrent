@@ -16,9 +16,9 @@
 
 .button:hover{
     background-color: #F94001;
-
 }
 
+.reload:hover{background-color: #F94001;}
 .cardbody{
     display: grid;
     grid-template-columns: repeat(2, 2fr);

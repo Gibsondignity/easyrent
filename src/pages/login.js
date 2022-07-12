@@ -6,7 +6,7 @@ import Layout from 'components/layout';
 import Loginpage from 'components/Accounts/Login';
 
 
-export default function IndexPage() {
+const IndexPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
@@ -20,3 +20,6 @@ export default function IndexPage() {
     </ThemeProvider>
   );
 }
+
+
+export default IndexPage;

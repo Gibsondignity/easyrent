@@ -45,7 +45,7 @@ const Drawer = ({
       </Box>
     </Fragment>
   );
-};
+}
 
 Drawer.defaultProps = {
   width: '320px',

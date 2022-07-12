@@ -50,7 +50,7 @@ const CollapseAccordion = () => {
 
   return (
 
-    <Container>
+    <Container className={style.main}>
       <h3 className={style.title}>FAQ's</h3>
   {
       data.map((item) => (
@@ -64,10 +64,10 @@ const CollapseAccordion = () => {
           </Accordion.Item>
         </Accordion>
 
-      ))};
+      ))}
 
     </Container>
-  );
+  )
 }
 
 export default CollapseAccordion;

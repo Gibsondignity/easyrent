@@ -41,8 +41,7 @@ const Calculator = () => {
 
                 // Percentage of user net salary for 1 year
                 let user_net_salary = parseFloat((netSalary * 12));
-                setUserNetSalary(user_net_salary.toFixed(2));
-               
+                setUserNetSalary(user_net_salary.toFixed(2)); 
                 
             }
 
@@ -137,8 +136,8 @@ const Calculator = () => {
                                     </Form.Select>
                                 </Form.Group>
                                 
-                                <Button className={style.button} type="submit">CHECK ACCEPTABILITY</Button><br/>
-                                <Button className={style.reload} onClick={reload} type="submit">Reload</Button>
+                                <Button className={style.button} type="submit">CHECK QUALIFICATION</Button><br/>
+                                <Button className={style.reload} onClick={reload} type="submit">RELOAD</Button>
                             </Form>
                         </Card.Body>
 

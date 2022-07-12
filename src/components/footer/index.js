@@ -38,22 +38,22 @@ const Footer = () => {
 
                 <div className={style.socials}>
                     <Link href="https://www.facebook.com/EasyRent-10990986801098/">
-                        <BsFacebook size={50} color="#1773EA" style={{margin: '.3rem',  cursor: 'pointer' }}/>
+                        <BsFacebook size={40} color="#1773EA" style={{margin: '.3rem',  cursor: 'pointer' }}/>
                     </Link>
 
                     <Link href="https://www.instagram.com/easyrent/">
-                        <BsTwitter size={50} color="#1C96E8" style={{margin: '.3rem', cursor: 'pointer' }}/>
+                        <BsTwitter size={40} color="#1C96E8" style={{margin: '.3rem', cursor: 'pointer' }}/>
                     </Link>
 
                     <Link href="https://www.instagram.com/easyrent/">
-                        <BsInstagram size={50} color="#9C30BF" style={{margin: '.3rem', cursor: 'pointer' }}/>
+                        <BsInstagram size={40} color="#9C30BF" style={{margin: '.3rem', cursor: 'pointer' }}/>
                     </Link>
                 </div>
             {/* </div> */}
         </div>
 
     </div>
-  )
+  );
 }
 
 
