@@ -18,8 +18,8 @@ const about = () => {
          />
 
           <About />
-          <Chooseus />
-          <Faq />
+          {/* <Chooseus /> */}
+          {/* <Faq /> */}
        </Layout>
      </ThemeProvider>
 

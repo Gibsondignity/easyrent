@@ -3,7 +3,7 @@ import React from 'react';
 
 import style from './style.module.css';
 import Link from 'next/link';
-import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
+import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {
   return (
@@ -54,6 +54,12 @@ const Footer = () => {
                         <BsInstagram size={40} color="#9C30BF" style={{margin: '.3rem', cursor: 'pointer' }}/>
                     </Link>
                 </div> 
+            </div>
+
+            <div className={style.about1}>
+                {/* <p>Visit our office at Harriman Plaza, 1st floor, office N#2</p> */}
+                <br />
+                <p>Powered by Cozytech Solutions<img src="https://i.imgur.com/REuSSUJ.jpg" width={130} height={50} /></p>
             </div>
 
         </div>

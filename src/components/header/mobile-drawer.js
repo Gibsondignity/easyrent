@@ -4,6 +4,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
+import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
 // import { Link } from 'react-scroll';
 import Link from 'next/link';
 import {
@@ -17,20 +18,23 @@ import menuItems from './header.data';
 const social = [
   {
     path: 'https://www.facebook.com',
-    icon: <FaFacebookF />,
+    icon: <BsFacebook size={30} color="#1773EA" style={{margin: '.3rem',  cursor: 'pointer' }}/>,
   },
   {
     path: 'https://twitter.com/',
-    icon: <FaTwitter />,
+    icon: <BsTwitter size={30} color="#1C96E8" style={{margin: '.3rem', cursor: 'pointer' }}/>,
   },
   
   {
     path: 'https://twitter.com/',
-    icon: <FaInstagram />,
+    icon: <BsInstagram size={30} color="#9C30BF" style={{margin: '.3rem', cursor: 'pointer' }}/>,
   },
   
 
 ];
+
+
+
 
 const MobileDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -73,7 +77,6 @@ const MobileDrawer = () => {
               </Link>
               
             ))}
-            <Link href="service">SERVICE</Link>
             <Link href="login">LOGIN</Link>
             <Link href="signup">SIGN UP</Link>
           </Box>

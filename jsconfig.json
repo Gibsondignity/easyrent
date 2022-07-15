@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "src"
-  }
+    "baseUrl": "src",
+  
+    "paths" : {
+      "api/account/*":["pages/api/account/*"]
+    }
+},
+
 }
