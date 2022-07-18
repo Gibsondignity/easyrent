@@ -8,8 +8,17 @@
 }
 
 .about1{
-    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: #000; */
+    margin: 0;
+    padding: 0;
+    /* color: #fff;
+    position: relative; 
+    top: -15px; */
 }
+
 
 .logoArea{
     display: grid;
@@ -74,9 +83,6 @@
         margin-right: auto;
     }
 
-    .about1{
-        display: block;
-    }
 
     .about{
         display: none;

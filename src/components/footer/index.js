@@ -28,7 +28,6 @@ const Footer = () => {
 
             <div className={style.about}>
                 <p>Visit our office at Harriman Plaza, 1st floor, office N#2</p>
-                <p>Powered by Cozytech Solutions<img src="https://i.imgur.com/REuSSUJ.jpg" width={130} height={50} /></p>
             </div>
 
             <div className={style.socials}>
@@ -56,12 +55,13 @@ const Footer = () => {
                 </div> 
             </div>
 
-            <div className={style.about1}>
-                {/* <p>Visit our office at Harriman Plaza, 1st floor, office N#2</p> */}
-                <br />
-                <p>Powered by Cozytech Solutions<img src="https://i.imgur.com/REuSSUJ.jpg" width={130} height={50} /></p>
-            </div>
-
+            
+        </div>
+        <div className={style.about1}>
+            <br />
+            <Link href="https://cozytechsolutionsgh.com/">
+                <p>Powered by Cozytech Solutions<img src="https://i.imgur.com/REuSSUJ.jpg" width={180} height={80} /></p>
+            </Link>
         </div>
 
     </div>
