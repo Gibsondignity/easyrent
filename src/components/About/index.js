@@ -3,11 +3,11 @@ import { Container } from 'react-bootstrap';
 import style from './style.module.css';
 import AboutContainer from './container';
 import Link from 'next/link';
-import WhyUs from './WhyChooseUs';
+import WhyChooseUs from './WhyChooseUs';
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
 
 
-const About = () => {
+const AboutBody = () => {
   return (
     <div>  
         <AboutContainer />
@@ -77,10 +77,10 @@ const About = () => {
         
         </Container>
 
-        <WhyUs />
+        <WhyChooseUs />
     </div>
   )
 }
 
 
-export default About;
+export default AboutBody;

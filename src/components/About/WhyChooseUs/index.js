@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 
 
-const About = () => {
+const WhyChooseUs = () => {
   return (
     <>
         <center>
@@ -74,4 +74,4 @@ const About = () => {
 }
 
 
-export default About
+export default WhyChooseUs;

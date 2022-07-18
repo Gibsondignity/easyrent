@@ -22,11 +22,10 @@ export default function Layout({ children }) {
     }
   }
 
-  
-  return (
 
+  return (
     
-    <React.Fragment>
+    <>
       <SSRProvider>
       <ScrollToTop />
       <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
@@ -41,7 +40,7 @@ export default function Layout({ children }) {
       </main>
       <Footer />
       </SSRProvider>
-    </React.Fragment>
+    </>
     
   )
 }

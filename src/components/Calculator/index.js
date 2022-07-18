@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Card, Form, Container, InputGroup, FormControl, Button } from 'react-bootstrap'
 import style from './style.module.css'
 
@@ -6,15 +6,35 @@ const Calculator = () => {
 
     const [netSalary, setSalary] = useState(0);    
     const [rentAmount, setAmount] = useState(0);    
-    const [year, setYear] = useState('1');    
+    const [year, setYear] = useState('1'); 
+    const [otherIncome, setOtherIncome] = useState(0);
 
     const [message, setMessage] = useState('Message appears here');   
     const [monthlyPayment, setMonthlyPayment] = useState(0);
     const [yearPayment, setYearPayment] = useState(0);
 
     const [userNetSalary, setUserNetSalary] = useState(0);
+    const [percentIncome, setPercentIncome] = useState(0);
 
-    
+    useEffect(() => {
+
+        if (userNetSalary === 0){
+            setMessage("Message appears here")
+        }else{
+
+            if ((userNetSalary/2) <= yearPayment) {
+                message = <p style={{ 'color': 'red' }}>You are not eligible</p>;
+                setMessage(message);
+            }else if((userNetSalary/2) > yearPayment){
+                message = <p style={{ 'color': 'green' }}>You are eligible</p>;
+                setMessage(message);
+            }
+            else{
+                setMessage('');
+            }
+        }
+    })
+
 
     let calEligibility = (e) => {
         // prevent default
@@ -42,6 +62,7 @@ const Calculator = () => {
                 // Percentage of user net salary for 1 year
                 let user_net_salary = parseFloat((netSalary * 12));
                 setUserNetSalary(user_net_salary.toFixed(2)); 
+
                 
             }
 
@@ -59,37 +80,37 @@ const Calculator = () => {
                 // Percentage of user net salary for 2 year
                 let user_net_salary = parseFloat((netSalary * 24));
                 setUserNetSalary(user_net_salary.toFixed(2));
-                
+
             }
 
-            handleMessage();
+            // handleMessage();
 
         }
         
     }
 
 
-    let handleMessage = () => {
+    // let handleMessage = () => {
 
-        let message = '';
-        console.log(( salary > yearPayment));
+    //     let message = '';
+    //     console.log(( salary > yearPayment));
 
-        let salary = userNetSalary / 2;
-        console.log(salary);
-        console.log(yearPayment) 
+    //     let salary = userNetSalary / 2;
+    //     console.log(salary);
+    //     console.log(yearPayment) 
 
-        if(salary <= yearPayment){
-            message = <p style={{ 'color': 'red' }}>You are not eligible</p>;
-            setMessage(message);
-        }
-        else if(salary > yearPayment){
-            message = <p style={{ 'color': 'green' }}>You are eligible</p>;
-            setMessage(message);
-        }
-        else{
-            setMessage('');
-        }
-    }
+    //     if(salary <= yearPayment){
+    //         message = <p style={{ 'color': 'red' }}>You are not eligible</p>;
+    //         setMessage(message);
+    //     }
+    //     else if(salary > yearPayment){
+    //         message = <p style={{ 'color': 'green' }}>You are eligible</p>;
+    //         setMessage(message);
+    //     }
+    //     else{
+    //         setMessage('');
+    //     }
+    // }
 
 
     let reload = () => {
@@ -110,7 +131,7 @@ const Calculator = () => {
                                 <Form.Label htmlFor="basic-url">Net Monthly Salary</Form.Label>
                                 <InputGroup className="mb-3">
                                     <InputGroup.Text>GH¢</InputGroup.Text>
-                                    <FormControl value={netSalary} onChange={(e) => setSalary(e.target.value)} aria-label="Amount (to the nearest dollar)" />
+                                    <FormControl value={netSalary} onChange={(e) => setSalary(e.target.value)} aria-label="Amount (to the nearest Ghana cedis)" />
                                     <InputGroup.Text >.00</InputGroup.Text>
                                 </InputGroup>
                                 
@@ -119,7 +140,16 @@ const Calculator = () => {
                                 <Form.Label htmlFor="basic-url"></Form.Label>
                                 <InputGroup className="mb-3">
                                     <InputGroup.Text>GH¢</InputGroup.Text>
-                                    <FormControl value={rentAmount} onChange={(e) => setAmount(e.target.value)} aria-label="Amount (to the nearest dollar)" />
+                                    <FormControl value={rentAmount} onChange={(e) => setAmount(e.target.value)} aria-label="Amount (to the nearest Ghana cedis)" />
+                                    <InputGroup.Text>.00</InputGroup.Text>
+                                </InputGroup>
+                                
+
+                                <Form.Label htmlFor="basic-url">Monthly Other Source of Income (Optional)</Form.Label>
+                                <Form.Label htmlFor="basic-url"></Form.Label>
+                                <InputGroup className="mb-3">
+                                    <InputGroup.Text>GH¢</InputGroup.Text>
+                                    <FormControl value={otherIncome} onChange={(e) => setOtherIncome(e.target.value)} aria-label="Amount (to the nearest Ghana cedis)" />
                                     <InputGroup.Text>.00</InputGroup.Text>
                                 </InputGroup>
                                 
@@ -164,4 +194,4 @@ const Calculator = () => {
 }
 
 
-export default Calculator
+export default Calculator;

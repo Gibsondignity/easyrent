@@ -11,7 +11,9 @@ const IndexPage = () => {
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO
-          description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!"
+          description="EasyRent ensures that Ghanaians find affordable and comfortable accommodation with ease, 
+          without any financial burden: Let EasyRent take the stress out of your rental 
+          experience in Ghana."
           title="EasyRent Gh"
         />
 
