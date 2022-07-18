@@ -2,7 +2,7 @@ import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
-import AboutBody from 'components/about';
+import AboutBody from 'components/About';
 
 
 const about = () => {
