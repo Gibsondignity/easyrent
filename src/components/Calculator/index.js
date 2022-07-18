@@ -19,7 +19,7 @@ const Calculator = () => {
     let calEligibility = (e) => {
         // prevent default
         const year_rate = 0.23;
-        const two_year_rate = 0.25;
+        const two_year_rate = 0.27;
         e.preventDefault();
         let message = '';
         if (netSalary === 0 || rentAmount === 0 || netSalary === '' || rentAmount === '') {

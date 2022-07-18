@@ -8,43 +8,43 @@ const CollapseAccordion = () => {
   const data = [
     {
       key: 0,
-      header: '1.	Who qualifies for EASYRENT?',
+      header: '1. Who qualifies for EasyRent?',
       body: 'Anyone working individual with an assured and verifiable income.'
     },
     {
       key: 1,
-      header: '2.	How do I apply?',
-      body: 'To apply online, first register on our site by signing up. Log into your account then go to the apply button. Fill in the form then submit. Or you can visit our office to pick a form.'
+      header: '2. How do I apply?',
+      body: 'To apply online, first register on our site by signing up. Log into your account then go to the apply button. Fill in the form then submit. Or you can visit our office to pick up a form.'
     },
     {
       key: 2,
       header: '3.	Do I pay for the Forms?',
-      body: 'Yes. When you visit our office for the final application process.'
+      body: 'Yes, payment is made upon submission of the application.'
     },
     {
       key: 3,
-      header: '4.	Do I need a guarantor? ',
-      body: 'Yes, you need a guarantor and he/she should be someone with a verifiable income as well and willing to cooperate.'
+      header: '4.	Do I need a guarantor?',
+      body: 'Yes, you need a guarantor, and he/she should be someone with a verifiable income as well as willing to cooperate.'
     },
     {
       key: 4,
-      header: '5.	What documentation do I need to provide when applying? ',
-      body: 'You will need a national ID (preferably GhCard), evidence of employment, a payment slip, or account statement.'
+      header: '5. What documentation do I need to provide when applying? ',
+      body: 'You will need a national ID (preferably a Ghana Card), evidence of employment, a payment slip or account statement.'
     },
     {
       key: 5,
       header: '6.	How is the repayment plan?  ',
-      body: 'You make an initial deposit to EASYRENT that varies with each rent amount. From there EASYRENT pays your rent advance, and you do your repayment in monthly installments.'
+      body: 'Monthly'
     },
     {
       key: 6,
       header: '7.	How long does the application process take?',
-      body: 'As soon as possible depending on the reliability of the information and documentation provided and the cooperation of the individual.'
+      body: 'As soon as possible, depending on the reliability of the information and documentation provided and the cooperation of the individual.'
     },
     {
       key: 7,
       header: '8.	What is the calculator for?  ',
-      body: 'The calculator helps you to know your monthly installments based on your net income.'
+      body: 'The calculator helps you calculate your monthly installments based on your gross income.'
     },
   ];
 
