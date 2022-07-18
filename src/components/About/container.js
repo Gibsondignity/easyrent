@@ -1,6 +1,6 @@
 import style from './style.module.css';
 
-const AboutContainer = () => {
+const Header = () => {
   return (
     <div>
       <div className="row title" style={{ marginBottom: "150px" }} ></div>
@@ -13,4 +13,4 @@ const AboutContainer = () => {
   )
 }
 
-export default AboutContainer;
+export default Header;

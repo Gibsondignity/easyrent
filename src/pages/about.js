@@ -3,8 +3,7 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 import AboutBody from 'components/about';
-import Faq from 'components/Faq/Faq';
-import Chooseus from 'components/About/WhyChooseUs';
+
 
 const about = () => {
   return (

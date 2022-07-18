@@ -1,11 +1,5 @@
 import style from './style.module.css'
 import Image from 'next/image'
-import 'swiper/css';
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-
-
 
 
 const WhyChooseUs = () => {

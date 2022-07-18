@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import style from './style.module.css';
-import AboutContainer from './container';
+import Header from './container';
 import Link from 'next/link';
 import WhyChooseUs from './WhyChooseUs';
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
@@ -10,7 +10,7 @@ import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
 const AboutBody = () => {
   return (
     <div>  
-        <AboutContainer />
+        <Header />
         <Container className={style.main}>
         <div className={style.grid}>
             <div className={style.box}>
