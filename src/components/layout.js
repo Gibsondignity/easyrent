@@ -7,7 +7,6 @@ import React, { useState } from 'react';
 import ScrollToTop from "react-scroll-to-top";
 import Sticky from 'react-stickynode';
 import Header from './header/header';
-// import Footer from './footer/footer';
 import Footer from './footer'
 
 import {SSRProvider} from '@react-aria/ssr';

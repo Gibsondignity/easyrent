@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import Image from 'next/image';
 import style from './style.module.css';
 import Link from 'next/link';
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
@@ -27,7 +26,9 @@ const Footer = () => {
             </div>
 
             <div className={style.about}>
-                <p>Visit our office at Harriman Plaza, 1st floor, office N#2</p>
+                <p>Harriman Plaza, First Floor, Office No. 2. Behind Total Logistics Ltd, Tema, Community 1</p>
+                <p>GT-056-0052</p>
+                <Link href="https://goo.gl/maps/HpRWyFo6oVyv1nWr5" ><p style={{margin: '.3rem',  cursor: 'pointer', color: '#2798B7' }}>Google Map</p></Link>
             </div>
 
             <div className={style.socials}>
@@ -36,11 +37,9 @@ const Footer = () => {
                         <li className={style.contacts}>Contacts</li>
                         <li className={style.contact_items}>info@easyrent.com</li>
                         <li className={style.contact_items}>+233(0) 242 869 759</li>
-                        
-                        
                     </ul>
                 </di>
-                <div>
+                <div className={style.icons}>
                     <Link href="https://www.facebook.com/EasyRent-10990986801098/">
                         <BsFacebook size={40} color="#1773EA" style={{margin: '.3rem',  cursor: 'pointer' }}/>
                     </Link>
@@ -59,9 +58,15 @@ const Footer = () => {
         </div>
         <div className={style.about1}>
             <br />
-            <Link href="https://cozytechsolutionsgh.com/">
-                <p>Powered by Cozytech Solutions<img src="https://i.imgur.com/REuSSUJ.jpg" width={180} height={80} /></p>
-            </Link>
+
+            <div>
+                <Link href="https://cozytechsolutionsgh.com/">
+                    <p>Powered by Cozytech Solutions</p>
+                </Link>
+            </div>
+            <div>
+                <img src="https://i.imgur.com/REuSSUJ.jpg" width={180} height={80} />
+            </div>
         </div>
 
     </div>

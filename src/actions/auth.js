@@ -116,7 +116,7 @@ export const register = (
     });
 
     try {
-        const res = await fetch('api/account/register', {
+        const res = await fetch('/api/account/register', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

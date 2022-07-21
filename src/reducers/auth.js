@@ -16,7 +16,7 @@ import {
     REMOVE_AUTH_LOADING,
 } from '../actions/types';
 
-const initialState = {
+const initialState = { 
     user: null,
     isAuthenticated: false,
     loading: false,

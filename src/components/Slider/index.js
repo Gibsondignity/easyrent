@@ -39,7 +39,7 @@ return (
             <Carousel.Item className={style.item}>  
                 <img style={{'height':"400px"}}  
                 className="d-block w-100"  
-                  src={'https://i.imgur.com/EPxpsz7.jpg'}   />  
+                  src={'https://i.imgur.com/IPwPEQa.jpg'}   />  
                 <Carousel.Caption>  
                   <h1 className={style.text}>Are you looking for financial support for your rent? </h1>   
                   <Button className={style.button} > Tenant </Button>{' '}

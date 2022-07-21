@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 import router from 'next/router';
 
 const Signuppage = () => {
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
     const router = useRouter();
     const register_success = useSelector(state => state.auth.register_success);
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
@@ -41,7 +41,7 @@ const Signuppage = () => {
     };
 
     if (typeof window !== 'undefined' && isAuthenticated)
-        router.push('/dashboard');
+        router.push('/dashboard/dashboard');
     if (register_success)
         router.push('/login');
 
@@ -53,7 +53,7 @@ const Signuppage = () => {
         <Container className="mt-5">
 
           <div className={style.form}>
-            <h2>Login</h2>
+            <h2>Register Account</h2>
             <Form onSubmit={onSubmit}>
               <Form.Group className="mb-3" controlId="formBasicFName">
                 <Form.Label>First Name</Form.Label>
@@ -142,9 +142,27 @@ const Signuppage = () => {
               {/* <Link href="/">Forgot Password?</Link><br/> */}
               
               <br />
-              <Button variant="primary" type="submit" >
-                Submit
-              </Button>
+              {/* {
+                  loading ? (
+                    <div className='d-flex justify-content-center align-items-center mt-5'>
+                      <Loader
+                        type="Puff"
+                        color="#00BFFF"
+                        width={50}
+                        height={50}
+                      />
+                    </div>
+                  ):(
+                    <Button style={{'backgroundColor':"blue"}} type="submit" >
+                      Register
+                    </Button>
+                  )
+              } */}
+
+                    <Button style={{'backgroundColor':"#F94001"}} type="submit" >
+                      Register
+                    </Button>
+              
             </Form>
 
           </div>

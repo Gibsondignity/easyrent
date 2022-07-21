@@ -11,12 +11,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    /* background-color: #000; */
     margin: 0;
     padding: 0;
-    /* color: #fff;
-    position: relative; 
-    top: -15px; */
+    display: flex;
+
 }
 
 
@@ -50,8 +48,11 @@
 }
 
 
-.socialMedia{
-    display: grid;
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 
@@ -86,5 +87,9 @@
 
     .about{
         display: none;
+    }
+
+    .about1{
+        display:grid;
     }
 }

@@ -3,10 +3,10 @@ import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
-import Loginpage from 'components/Accounts/Login';
+import LoginPage from 'components/Accounts/Login';
 
 
-const IndexPage = () => {
+export default function IndexLoginPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
@@ -17,11 +17,10 @@ const IndexPage = () => {
           title="EasyRent Gh"
         />
 
-        <Loginpage />
+        <LoginPage />
       </Layout>
     </ThemeProvider>
   );
 }
 
 
-export default IndexPage;

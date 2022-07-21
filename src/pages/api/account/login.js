@@ -1,8 +1,8 @@
 import cookie from 'cookie';
-import { API_URL } from '../../../config/index';
-
+import { API_URL } from '../../../config'
 
 export default async (req, res) => {
+    
     if (req.method === 'POST') {
         const { email, password } = req.body;
 
@@ -12,7 +12,7 @@ export default async (req, res) => {
         });
 
         try {
-            const apiRes = await fetch(`${API_URL}/api/token/`, {
+            const apiRes = await fetch('http://127.0.0.1:8000/api/token', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -20,7 +20,7 @@ export default async (req, res) => {
                 },
                 body: body
             });
-
+            
             const data = await apiRes.json();
 
             if (apiRes.status === 200) {

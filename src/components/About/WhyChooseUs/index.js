@@ -1,5 +1,6 @@
 import style from './style.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const WhyChooseUs = () => {
@@ -49,18 +50,25 @@ const WhyChooseUs = () => {
         </center>
 
         <div className={style.section_3}>     
+            <Link href="https://cozypropertiesgh.com/">
+                <div>
+                    <img src='https://i.imgur.com/R4HdECg.png' width={150} height={150}></img>
+                </div>
+            </Link>
 
-            <div>
-                <img src='https://i.imgur.com/R4HdECg.png' width={150} height={150}></img>
-            </div>
-            
-            <div>
-                <img src='https://i.imgur.com/NhIK5w5.png' width={150} height={150}></img>
-            </div>
 
-            <div>
-                <img src='https://i.imgur.com/oV49K3K.png' width={150} height={150}></img>
-            </div>
+            <Link href="https://cozytechsolutionsgh.com/">  
+                <div>
+                    <img src='https://i.imgur.com/NhIK5w5.png' width={150} height={150}></img>
+                </div>
+            </Link>  
+
+
+            <Link href="https://eza4songroup.com/cozy-laundry/">
+                <div>
+                    <img src='https://i.imgur.com/oV49K3K.png' width={150} height={150}></img>
+                </div>
+            </Link>
         </div>
 
     </>

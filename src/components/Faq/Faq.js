@@ -9,12 +9,12 @@ const CollapseAccordion = () => {
     {
       key: 0,
       header: '1. Who qualifies for EasyRent?',
-      body: 'Anyone working individual with an assured and verifiable income.'
+      body: 'Any working individual with an assured and verifiable income.'
     },
     {
       key: 1,
       header: '2. How do I apply?',
-      body: 'To apply online, first register on our site by signing up. Log into your account then go to the apply button. Fill in the form then submit. Or you can visit our office to pick up a form.'
+      body: 'To apply online, first register on our website by signing up. Log into your account and click the apply button. Fill in the form and submit. Or you can visit our office to pick up a form.'
     },
     {
       key: 2,
@@ -24,7 +24,7 @@ const CollapseAccordion = () => {
     {
       key: 3,
       header: '4.	Do I need a guarantor?',
-      body: 'Yes, you need a guarantor, and he/she should be someone with a verifiable income as well as willing to cooperate.'
+      body: 'Yes, you need a guarantor. He/she must have a verifiable income and be willing to cooperate.'
     },
     {
       key: 4,
@@ -39,7 +39,7 @@ const CollapseAccordion = () => {
     {
       key: 6,
       header: '7.	How long does the application process take?',
-      body: 'As soon as possible, depending on the reliability of the information and documentation provided and the cooperation of the individual.'
+      body: '7.	The application process is swift, depending on the reliability of the information and documentation provided and the cooperation of the individual.'
     },
     {
       key: 7,

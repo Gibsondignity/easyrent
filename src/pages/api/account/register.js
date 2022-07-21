@@ -19,7 +19,9 @@ export default async (req, res) => {
         });
 
         try {
-            const apiRes = await fetch(`${API_URL}/api/account/register`, {
+            // const apiRes = await fetch(`${API_URL}/api/account/register`, {
+
+            const apiRes = await fetch(`http://127.0.0.1:8000/api/account/register`, {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
