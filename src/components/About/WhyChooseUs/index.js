@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
             <div className={style.container}>
                 <h3>Affordability</h3>
                 <hr/>
-                <p>Our prices are very competitive and we are best on the market.</p>
+                <p>Our prices are very competitive and we are the best on the market.</p>
             </div>
 
             <div className={style.container}>
@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
             </div>
 
             <div className={style.container}>
-                <h3>Conveniences</h3>
+                <h3>Convenience</h3>
                 <hr/>
                 <p>At EasyRent, apartment selection, verification of financial resources, contract signing and payment can all be done online with just a click.</p>
             </div>
@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
             <div className={style.container}>
                 <h3>Trust</h3>
                 <hr/>
-                <p>Our customers rate us high and are very mush satisfy with our services and product.</p>
+                <p>Our customers rate us high and are very much satisfied with our services and product.</p>
             </div>
 
         </div>

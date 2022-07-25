@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 import style from './style.module.css';
 import Header from './container';
 import Link from 'next/link';
@@ -11,7 +11,7 @@ const AboutBody = () => {
   return (
     <div>  
         <Header />
-        <Container className={style.main}>
+        <Container>
         <div className={style.grid}>
             <div className={style.box}>
                 <h1 className={style.heading}>About Us</h1>
@@ -57,12 +57,8 @@ const AboutBody = () => {
                <ul className={style.list}>
                    <li>
                        To ensure that Ghanaians find affordable and comfortable accommodation with ease, 
-                       without any financial burden: Let EasyRent take the stress out of your rental 
-                       experience in Ghana. Finding a legitimate apartment that offers you flexibility in 
-                       payment can be daunting. The most common headache among rent-seekers in Ghana is many 
-                       fake agents, websites, and the two years rent advance demanded by property owners. 
-                       This is where EasyRent comes in. Our mission is to ensure that Ghanaians find affordable 
-                       and comfortable accommodation with a flexible payment plan.
+                       without any financial burden. EasyRent aims to take the stress out of your rental experinence by helping 
+                       you find a legitimate apartment that offers you flexibility in payment.
                    </li>
                    <li>To make decent accommodation accessible to all.</li>
                    <li>
