@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
             <div className={style.container}>
                 <h3>Affordability</h3>
                 <hr/>
-                <p>Our price is very competitive and we are best on the market.</p>
+                <p>Our prices are very competitive and we are best on the market.</p>
             </div>
 
             <div className={style.container}>
