@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
+import { Container } from 'react-bootstrap';
 import style from './style.module.css';
 import Header from './container';
 import Link from 'next/link';

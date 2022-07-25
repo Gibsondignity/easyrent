@@ -1,5 +1,5 @@
 import style from './style.module.css';
-import Container from 'react-bootstrap/Container';
+import { Container } from 'react-bootstrap';
 import ServiceContainer from './container' 
 
 
@@ -32,10 +32,9 @@ const Services = () => {
                 <div className={style.intro}>
                     <h1>Move-in/Move-out</h1>
                     <p>
-                     
                     Whether you’re moving across the road, to a new location or from one end of the city to another, 
-                    be sure to let us take your home. Our team of professionals are available to make sure your precious belongs 
-                    are secured and without damage. Move across town with ease.
+                    be sure to let us manage your moving. Our team of professionals are available to ensure your precious belongings 
+                    are secured and without damage. Call on us for an easy moving experience.
                     </p>
                 </div>
 
@@ -50,7 +49,8 @@ const Services = () => {
                 <div className={style.intro}>
                     <h1>Home Repair</h1>
                     <p>
-                        Our dedicated team of highly trained professionals with a plethora of experience resolve all your
+                        Whether you’re looking at a little electrical work, plumbing, drilling, painting or carpeting  EasyRent got you covered. 
+                        Our dedicated team of highly trained professionals with a plethora of experience can resolve all your
                         technical problems at a go.
                     </p>
                 </div>
